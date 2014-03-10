@@ -1,0 +1,23 @@
+{
+  "name": "infern.al",
+  "private": true,
+  "version": "0.0.2",
+    "engines": {
+      "node": "0.10.x"
+  },
+  "description": "Infernal Engineering",
+  "dependencies": {
+    "sails": "0.9.11",
+    "grunt": "0.4.1",
+    "sails-disk": "~0.9.0",
+    "then-jade": "1.1.0",
+    "optimist": "0.3.4"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "debug": "node debug app.js"
+  },
+  "main": "app.js",
+    "repository": "https://github.com/infernalcode/infern.al",
+    "author": "Ryan C. Creasey"
+}
