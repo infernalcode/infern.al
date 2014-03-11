@@ -1,16 +1,14 @@
-(function() {
-  $(document).ready(function() {
+$(document).ready(function() {
 
-    // $('#navbar').affix({
-    //   offset: {
-    //     top: function() {
-    //       return (this.top = $('.selection.welcome').height() - 70);
-    //     }
-    //   }
-    // });
-
-    
+  $('#navbar').affix({
+    offset: {
+      top: function() {
+        return (this.top = $('.selection.welcome').height() - 70);
+      }
+    }
   });
+
+  
 });
 
 
