@@ -1,6 +1,6 @@
 var ApplicationController = {
   index: function(req, res) {
-    res.view();
+    res.view({title: 'Infernal Engineering'});
   }
 };
 module.exports = ApplicationController;
