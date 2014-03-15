@@ -273,11 +273,6 @@ img.background {
   margin: 14% 0 30px 0;
   font-size: 60px;
 }
-.welcome span.logo.glyphicon-leaf {
-  padding-top: 20px;
-  font-size: 44px;
-}
-
 
 .section:last-child {
   background-color: #fff;
@@ -305,7 +300,17 @@ img.background {
     margin: 18px 0 35px 0;
   }
   .section.welcome { height: 100%; }
-  span.logo.glyphicon { margin-top: 20px; }
+  span.logo.glyphicon {
+    border-radius: 30px !important; 
+    -webkit-border-radius: 30px !important; 
+    -moz-border-radius: 30px !important; 
+    font-size: 30px !important;
+    display: block;
+    height: 50px !important;
+    margin: 0 auto !important;
+    padding-top: 7px !important;
+    width: 50px !important;
+  }
 }
 
 @media (max-width: 767px) {
@@ -386,14 +391,6 @@ background-color: #000;
     background-attachment: scroll;
   }
 }      
-
-@media (max-width: 768px) {
-  #clients img.logo { width: 50%; }
-}
-@media (max-width: 420px) {
-  #clients { background-attachment: scroll; }
-}
-
 
 .social-media {
   margin-bottom: 20px;
