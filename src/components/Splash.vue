@@ -1,3 +1,4 @@
+
 <template>
   <div class="infernal">
     <h1>{{ title }}</h1>
