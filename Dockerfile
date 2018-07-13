@@ -9,8 +9,13 @@ COPY . .
 RUN npm run build
 
 # production stage
-FROM nginx:1.13.12-alpine as production-stage
-COPY --from=build-stage /app/dist /usr/share/nginx/html
-RUN sed -i 's/listen.*80;/listen 8080;/' /etc/nginx/conf.d/default.conf
-EXPOSE 8080
-CMD ["nginx", "-g", "daemon off;"]
+FROM node:9.11.1-alpine as production-stage
+WORKDIR /app
+COPY --from=build-stage /app/package.json /app/package.json
+RUN npm install --production
+
+COPY --from=build-stage /app/dist /app/dist
+COPY --from=build-stage /app/server.js /app/server.js
+
+EXPOSE 5000
+CMD ["npm", "start"]
