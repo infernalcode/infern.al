@@ -1,38 +1,28 @@
-
 <template>
-  <div class="infernal">
-    <h1>{{ title }}</h1>
-  </div>
+  <span id="splash">
+    <h1>{{ msg }}</h1>
+    <p>
+        <a href="https://github.com/infernalcode" title="github"><font-awesome-icon :icon="['fab', 'github']" /> github</a> |
+        <a href="mailto:info@infern.al" title="contact"><font-awesome-icon icon="envelope" /> contact</a>
+    </p>
+  </span>
 </template>
 
 <script>
 export default {
-  name: 'infernal',
-  data () {
-    return {
-      title: 'Infernal Engineering'
-    }
+  name: 'Splash',
+  props: {
+    msg: String
   }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
-h1, h2 {
-  font-weight: normal;
+<style scoped>
+a, a:visited, a:hover, a:active {
+  color: #49ade9;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #35495E;
+h1 {
+  margin-bottom: 0;
 }
 </style>

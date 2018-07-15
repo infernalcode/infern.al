@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Splash from '@/components/Splash'
+import Splash from './views/Splash.vue'
 
 Vue.use(Router)
 
@@ -8,7 +8,7 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Splash',
+      name: 'home',
       component: Splash
     }
   ]
